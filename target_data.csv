@@ -1,0 +1,5 @@
+customer_id,customer_name,amount_in_usd,customer_age,signup_date
+101,Alice,100.0,25,2023-01-01
+103,Charlie,150.0,35,2023-02-15
+104,David,100.0,45,2023-03-01
+105,Eva,50.0,20,2023-03-10

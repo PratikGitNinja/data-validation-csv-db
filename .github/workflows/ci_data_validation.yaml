@@ -1,0 +1,27 @@
+name: Data validation of csv and database
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+
+  builds:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up python
+      uses: actions/setup-python@v4
+
+    - name: Install the dependencies
+      runs: pip install pytest mysql.connector pandas
+    
+    - name: Run the job.
+      runs: pytest
