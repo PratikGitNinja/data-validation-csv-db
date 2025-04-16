@@ -23,5 +23,5 @@ jobs:
     - name: Install the dependencies
       runs: pip install pytest mysql.connector pandas
     
-    - name: Run the job.
+    - name: Run the data validation job.
       runs: pytest
