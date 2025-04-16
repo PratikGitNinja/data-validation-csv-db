@@ -21,7 +21,7 @@ jobs:
       uses: actions/setup-python@v4
 
     - name: Install the dependencies
-      runs: pip install pytest mysql.connector pandas
+      run: pip install pytest mysql.connector pandas
     
     - name: Run data validation job.
-      runs: pytest
+      run: pytest
